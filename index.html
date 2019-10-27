@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Paint Auction</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="background: linear-gradient(120deg,#080808,#444);">
+        <div class="container"><a class="navbar-brand logo" href="#">그림전</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation">
+                        <h6 class="nav-link">RESET D-<span id="elapsed-date"></span></h6>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <h6 class="nav-link">PRICE UP <span id="elapsed-time"></span></h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page projects-page">
+        <section class="portfolio-block projects-cards">
+            <div class="container">
+                <div class="heading" id="main-paint">
+                    <h1>Lev-0001</h1>
+                    <div class="row">
+                        <div class="col"><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/90939453-6218-4c1f-a067-896469a49bbd/ex-picture.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=ASIAT73L2G45O3HWBTSP%2F20191027%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191027T170251Z&amp;X-Amz-Expires=86400&amp;X-Amz-Security-Token=AgoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQC0aItZZ531urA%2Bn3U6k1ULjRiXLIdCrD2zvUu5UhNBXAIhAIqbZngjb63p0kg6RG9wimSZhjMJHqjBl81tW34FP27sKtoDCHcQABoMMjc0NTY3MTQ5MzcwIgwHDsi7S1IRczYmkNQqtwPFGvhfS8ASUsj2vVCAJMseijn2otqxFLLv4B5wN21weTAUkq0jdFB%2BRTFP8sY9Ro5WQheolBzXTt%2Brqhu3Axfb3XefEFcaZACg%2BoV1ecVtr88eu6C6XpgLxr7TbiyWvqZ%2BQT4m1cMZdzfUTNof%2BQmCFbDTlAEFNr0JROBQNAaRG%2BSIxUwZF42lmuj%2FfK9Fewu7Ye0TFFWuO8ioUmt7nhh02pF4IRQF8u4tmEYjaRSj8d0WeZpqKdyGYuDDfN%2BjP6SAAC2%2FsFuWwXr5l5RyQffrOsEXAM8ZYgY8g1D4Cl71ktRahO4zIHWCfWVlvFxgbfwTCBLibFJfFj4ZkekXf4pUNGy2m0hYy4UUcPGtCRqmRpf2MZnTaSM84Pe2AaiY8zu%2BEDJ1ff4z9k1TekN5CwhnRj0lp265vAFGY%2B0bhyF6JtxcTXYW%2B3QlOYvGF2xLnBJi8qjYdXZsDw%2F%2BY4Uaxmz%2FD7r9jbXPonm7jn2O5XMy51SH0EUVb6P84J82TvodPRtnZPKqswB9C2h6%2B6i26BBVojkA0MvHbFJsU8lVHVD8faxnc5fCYR6vgqzrOA6kFxJVi10d6vZwMLXC1u0FOrMBfkLTEkeGOmzbdhkPJEz7VwaDD%2BX6neTaE8s8GiY4sHhrZv5GVPebOLV39zrZ%2FboqVqzpshXeK4BjNYRLScvcId1SRvnQet8M4e1dhlaEewKbZKG2IOVet62ZTglPB1vVzTD17pktPG6pQK%2BLeN08JZQTw9NaVvoMyaxKQPZv20MX8rj3ks6DVUGaFynX0j6Q4oqdsWN8W0xvTyaP7z3wysUHQ8a9iPWWOdzqCnDAv6IXjWA%3D&amp;X-Amz-Signature=90ebe0d3e4e77f503c326ee0753c2dd7dbca453573e58b23a31bec509edafa69&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22ex-picture.PNG.png%22"
+                                style="max-width: 100%;"></div>
+                    </div>
+                    <div class="row" style="padding-left: 0%;padding-right: 0%;margin-top: 2em;">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <h3 style="color: blue;">Today Point</h3>
+                            <h4><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h4>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 tomorrow-point">
+                            <h3 style="color: red;">Tomorrow Point</h3>
+                            <h4><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,000,000,000</h4>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1em;">Contact us: zoon35@naver.com</p>
+                    <div class="row">
+                        <div class="col">
+                            <p style="width: 100%;max-width: 80%;text-align: justify;color: black;margin-top: 1em;">Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="paints">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" id="rev-0002" src="assets/img/nature/image1.jpg" alt="Card Image" style="cursor: pointer;">
+                            <div class="card-body">
+                                <h5>REV-0002</h5>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h6>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,100,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" id="rev-0002" src="assets/img/nature/image1.jpg" alt="Card Image" style="cursor: pointer;">
+                            <div class="card-body">
+                                <h5>REV-0002</h5>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h6>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,100,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" id="rev-0002" src="assets/img/nature/image1.jpg" alt="Card Image" style="cursor: pointer;">
+                            <div class="card-body">
+                                <h5>REV-0002</h5>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h6>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,100,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" id="rev-0002" src="assets/img/nature/image1.jpg" alt="Card Image" style="cursor: pointer;">
+                            <div class="card-body">
+                                <h5>REV-0002</h5>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h6>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,100,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" id="rev-0002" src="assets/img/nature/image1.jpg" alt="Card Image" style="cursor: pointer;">
+                            <div class="card-body">
+                                <h5>REV-0002</h5>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h6>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,100,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" id="rev-0002" src="assets/img/nature/image1.jpg" alt="Card Image" style="cursor: pointer;">
+                            <div class="card-body">
+                                <h5>REV-0002</h5>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h6>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,100,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" id="rev-0002" src="assets/img/nature/image1.jpg" alt="Card Image" style="cursor: pointer;">
+                            <div class="card-body">
+                                <h5>REV-0002</h5>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h6>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,100,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" id="rev-0002" src="assets/img/nature/image1.jpg" alt="Card Image" style="cursor: pointer;">
+                            <div class="card-body">
+                                <h5>REV-0002</h5>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h6>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,100,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" id="rev-0002" src="assets/img/nature/image1.jpg" alt="Card Image" style="cursor: pointer;">
+                            <div class="card-body">
+                                <h5>REV-0002</h5>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h6>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,100,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" id="rev-0002" src="assets/img/nature/image1.jpg" alt="Card Image" style="cursor: pointer;">
+                            <div class="card-body">
+                                <h5>REV-0002</h5>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h6>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,100,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" id="rev-0002" src="assets/img/nature/image1.jpg" alt="Card Image" style="cursor: pointer;">
+                            <div class="card-body">
+                                <h5>REV-0002</h5>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h6>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,100,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" id="rev-0002" src="assets/img/nature/image1.jpg" alt="Card Image" style="cursor: pointer;">
+                            <div class="card-body">
+                                <h5>REV-0002</h5>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-circle" style="color: blue;"></i>&nbsp;1,000,000,000</h6>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <h6><i class="fa fa-arrow-up" style="color: red;"></i>&nbsp;1,100,000,000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/dobby.js"></script>
+    <script>
+        updateTime();
+        load();
+    </script>
+</body>
+
+</html>
